@@ -1,0 +1,26 @@
+{
+  "id": "/oliva-pizzeria/kuhinja",
+  "name": "Oliva · Kuhinja",
+  "short_name": "Kuhinja",
+  "description": "Portal za kuhinju — Oliva Pizzeria",
+  "lang": "sr",
+  "start_url": "/oliva-pizzeria/kuhinja",
+  "scope": "/oliva-pizzeria/kuhinja",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#15130F",
+  "background_color": "#15130F",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

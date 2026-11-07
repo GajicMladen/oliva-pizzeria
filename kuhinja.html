@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="sr" data-tenant="oliva">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Portal za kuhinju — Oliva" />
+    <meta name="theme-color" content="#15130F" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kuhinja" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/oliva-pizzeria/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/oliva-pizzeria/apple-touch-icon.png" />
+    <!-- The kitchen's own manifest, in the HTML from the start: iOS Safari reads the manifest link when the page loads and
+         ignores a later change by the app, so a dynamically swapped link made "Add to Home Screen" install the customer app. -->
+    <link rel="manifest" href="/oliva-pizzeria/manifest-kuhinja.webmanifest" />
+    <title>Kuhinja · Oliva</title>
+    <style>
+      /* Splash painted before the JS bundle arrives: the kitchen is dark, so the splash is too. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: #15130F; }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-cream-100, #fff); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="oliva"] {
+  --color-cream-50: #221F19;
+  --color-cream-100: #15130F;
+  --color-cream-200: #1C1A15;
+  --color-cream-300: #3A362B;
+  --color-cream-400: #5A5443;
+  --color-azure-100: #2E2A1A;
+  --color-azure-200: #B89A2A;
+  --color-azure-300: #C9A93A;
+  --color-azure-400: #D9BD56;
+  --color-on-primary: #1A1708;
+  --color-forest-950: #FFFFFF;
+  --color-forest-900: #F4EBD3;
+  --color-forest-800: #FBF4E2;
+  --color-forest-700: #EADFC2;
+  --color-forest-600: #C9BFA4;
+  --color-forest-500: #A39A80;
+  --color-forest-400: #8A8169;
+  --color-flame-100: #3A2A14;
+  --color-flame-200: #6A4A1E;
+  --color-flame-500: #E08A2E;
+  --color-flame-600: #F0A050;
+  --color-flame-700: #F7BD80;
+  --color-tomato-500: #F0665A;
+  --color-tomato-100: #3C1F1A;
+  --color-basil-500: #8DB474;
+  --color-basil-100: #1F2C1A;
+  --color-notice-500: #E8B64A;
+  --color-notice-100: #3A2D10;
+  --color-ink: #F4EBD3;
+  --color-ink-2: #C9BFA4;
+  --color-ink-3: #948B72;
+  --font-display: "Alata", "Helvetica Neue", Arial, sans-serif;
+  --display-scale: 0.92;
+  --display-tracking: 0.01em;
+  --display-case: none;
+  --display-weight: 400;
+  --motif: repeating-linear-gradient(135deg, rgba(201, 169, 58, 0.28) 0 2px, transparent 2px 14px), linear-gradient(#1A1710, #1A1710);
+  --glass-bg: rgba(21, 19, 15, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /oliva-pizzeria/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/oliva-pizzeria/fonts/alata-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/oliva-pizzeria/fonts/alata-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+    <script type="module" crossorigin src="/oliva-pizzeria/assets/main-DtFUMk1_.js"></script>
+    <link rel="stylesheet" crossorigin href="/oliva-pizzeria/assets/main-i0UKNk7r.css"><script id="vite-plugin-pwa:register-sw" src="/oliva-pizzeria/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">KUHINJA</span><span class="splash-sub">Oliva · Učitavanje</span></div></div>
+  </body>
+</html>
